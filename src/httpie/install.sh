@@ -14,12 +14,13 @@ check_packages() {
 apt update
 check_packages dpkg
 check_packages curl
-check_packages gpg
+check_packages gnupg2
+check_packages ca-certificates
 
 architecture="$(dpkg --print-architecture | grep -oP 'amd64|arm64')"
 
-curl -SsL https://packages.httpie.io/deb/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/httpie.gpg
-echo "deb [arch=${architecture} signed-by=/usr/share/keyrings/httpie.gpg] https://packages.httpie.io/deb ./" | sudo tee /etc/apt/sources.list.d/httpie.list > /dev/null
+curl -SsL https://packages.httpie.io/deb/KEY.gpg | gpg --dearmor -o /usr/share/keyrings/httpie.gpg
+echo "deb [arch=${architecture} signed-by=/usr/share/keyrings/httpie.gpg] https://packages.httpie.io/deb ./" | tee /etc/apt/sources.list.d/httpie.list > /dev/null
 apt update
 apt install -y httpie
 
