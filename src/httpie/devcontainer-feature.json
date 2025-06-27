@@ -1,0 +1,10 @@
+{
+    "name": "HTTPie",
+    "id": "httpie",
+    "version": "0.1.0",
+    "description": "Installs HTTPie, a command line HTTP client.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
