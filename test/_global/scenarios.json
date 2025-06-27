@@ -1,6 +1,8 @@
 {
     "httpie": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {}
+        "features": {
+            "httpie": {}
+        }
     }
 }
