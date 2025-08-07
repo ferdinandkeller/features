@@ -1,0 +1,13 @@
+{
+    "name": "SQLC",
+    "id": "sqlc",
+    "version": "1.0.0",
+    "description": "Installs SQLC, a tool for generating bindings from SQL.",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/go:1": {}
+    }
+}
