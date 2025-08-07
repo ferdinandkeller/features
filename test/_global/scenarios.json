@@ -2,7 +2,12 @@
     "httpie": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "httpie": {},
+            "httpie": {}
+        }
+    },
+    "sqlc": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
             "sqlc": {}
         }
     }
