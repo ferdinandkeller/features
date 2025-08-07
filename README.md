@@ -9,3 +9,4 @@ This project **Features** is a set of reusable 'features'. Quickly add a tool/cl
 **List of features:**
 
 * [httpie](src/httpie/README.md): Installs HTTPie, a command line HTTP client.
+* [sqlc](src/sqlc/README.md): Installs SQLC, a command line tool for generating bindings from SQL.
